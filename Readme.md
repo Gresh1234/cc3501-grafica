@@ -1,16 +1,19 @@
-# The Hall of Fame 2022
-In [this](./HoF2022/hall.md) page, you can find the several renderings from the student's homeworks.
-
-
-# The Hall of Fame 2021
-In [this](./HoF/hall.md) page, you can find the several renderings from the student's homeworks.
-
 # Computer Graphics with OpenGL and Python
 
 This set of examples illustrate different computer graphics concepts in 2D and 3D while using: Python, OpenGL core profile, GLFW and Numpy.
-    
-## Raster
 
+---
+    
+## The Hall of Fame 2022
+In [this](./HoF2022/hall.md) page, you can find the several renderings from the student's homeworks.
+
+
+## The Hall of Fame 2021
+In [this](./HoF/hall.md) page, you can find the several renderings from the student's homeworks.
+
+---
+
+## Raster
     
 ### ex_color_palette.py
 Simulating an indirect color scheme with matplotlib

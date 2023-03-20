@@ -74,6 +74,7 @@ Si no funciona puede crear directamente la carpeta con el environment, ejecutand
 
     python3 -m venv python-cg
 
+
 Instalando librerías
 --------------------
 
@@ -87,7 +88,7 @@ Puede probar que la versión de python activa es la que se encuentra en su envir
 
     which python
 
-La respuesta debiera ser
+La respuesta debiera ser 
 
     /home/[username]/python-cg/bin/python
 
@@ -95,7 +96,7 @@ También verifique pip, con:
 
     which pip
 
-La respuesta debiera ser
+La respuesta debiera ser 
 
     /home/[username]/python-cg/bin/pip
 
@@ -109,21 +110,23 @@ Ahora instalamos todas las librerias python requeridas
 
 Siempre es posible instalar cada librería por separado.
 
+
 Arreglar glfw
 --------------------
 
 Para que todos los programas corran correctamente debera agregar el siguiente bloque de codigo en la linea 1180
 
-    [ 1174 ] """
-    [ 1175 ] Creates a window and its associated context.
-    [ 1176 ]
-    [ 1177 ] Wrapper for:
-    [ 1178 ]     GLFWwindow* glfwCreateWindow(int width, int height, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
-    [ 1179 ] """
+    [ 1246 ] """
+    [ 1247 ] Creates a window and its associated context.
+    [ 1248 ]
+    [ 1249 ] Wrapper for:
+    [ 1250 ]     GLFWwindow* glfwCreateWindow(int width, int height, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
+    [ 1251 ] """
     # Agregar esto:
-    [ 1180 ] window_hint(CONTEXT_VERSION_MAJOR, 3)
-    [ 1181 ] window_hint(CONTEXT_VERSION_MINOR, 3)
-    [ 1182 ] window_hint(OPENGL_FORWARD_COMPAT, True)
-    [ 1183 ] window_hint(OPENGL_PROFILE, OPENGL_CORE_PROFILE)
+    [ 1252 ] window_hint(CONTEXT_VERSION_MAJOR, 3)
+    [ 1253 ] window_hint(CONTEXT_VERSION_MINOR, 3)
+    [ 1254 ] window_hint(OPENGL_FORWARD_COMPAT, True)
+    [ 1255 ] window_hint(OPENGL_PROFILE, OPENGL_CORE_PROFILE)
 
-al archivo ~/pythoncg/lib/python3.9/site-packages/glfw/\_\_init\_\_.py
+al archivo ~/pythoncg/lib/python3.9/site-packages/glfw/__init__.py
+

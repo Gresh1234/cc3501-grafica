@@ -19,7 +19,7 @@ def updatePalette(colorPalette, t):
             color[0],
             color[1] * t,
             color[2] * t],
-            dtype=np.float)
+            dtype=dtype=float)
         newPalette += [newColor]
 
     return newPalette

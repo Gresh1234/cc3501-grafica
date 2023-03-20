@@ -62,7 +62,7 @@ def assignColors(indexedImage, colorsPalette):
     assert len(indexedImage.shape) == 2
 
     # Here we will construct the image
-    image = np.zeros(shape=(indexedImage.shape[0], indexedImage.shape[1], 3), dtype=np.float)
+    image = np.zeros(shape=(indexedImage.shape[0], indexedImage.shape[1], 3), dtype=float)
 
     # Checking each row
     for i in range(indexedImage.shape[0]):
@@ -81,7 +81,7 @@ def modifyPalette(colorPalette):
 
     for color in colorPalette:
         # Generating a new color changing the RGB order...
-        newColor = np.array([color[1], color[2], color[0]], dtype=np.float)
+        newColor = np.array([color[1], color[2], color[0]], dtype=float)
         newPalette += [newColor]
 
     return newPalette
