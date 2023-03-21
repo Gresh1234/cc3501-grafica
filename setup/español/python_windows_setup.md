@@ -47,9 +47,8 @@ Ahora pip deberia estar instalado, por lo ahora se procedera a instalar los paqu
 - matplotlib
 - pyopengl
 - glfw
-- ipython
-- jupyter
 - pillow
+- pyglet
 
 Antes de instalar las librerias crearemos primero un entorno virtual que contega los paquetes del curso, para esto ejecutaremos el siguiente comando idealmente en la carpeta donde guardara los contenidos de este curso:
 
@@ -65,7 +64,11 @@ O si se esta haciendo uso de PowerShell con el comando
 
 Ahora continuaremos con la instalacion de los paquetes, para instalar estos paquetes usaremos el comando: 
 
-    pip install numpy scipy matplotlib ipython jupyter pyopengl glfw pillow
+    pip install numpy scipy matplotlib pyopengl glfw pillow pyglet
+
+O, alternativamente, si están en la carpeta raíz del repositorio, pueden usar:
+
+    pip install -r requirements.txt
 
 Siempre es posible instalar cada librería por separado.
  
@@ -137,6 +140,6 @@ Si no arroja error o no encontrado puede seguir, de lo contrario tiene que insta
     
 Ahora si puede instalar las librerías:
 
-    pip install numpy scipy matplotlib pyopengl glfw ipython jupyter pillow imgui[glfw]
+    pip install numpy scipy matplotlib pyopengl glfw pillow pyglet
 
 Es posible que se le pida actualizar algunas dependencias, ingrese 'y' para aceptar.

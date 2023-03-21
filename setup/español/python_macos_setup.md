@@ -106,7 +106,11 @@ Instalemos algunas dependencias necesarias:
 
 Ahora instalamos todas las librerias python requeridas
 
-    pip install numpy scipy matplotlib ipython jupyter pyopengl glfw pillow
+    pip install numpy scipy matplotlib pyopengl glfw pillow pyglet
+
+O, alternativamente, si están en la carpeta raíz del repositorio, pueden usar:
+
+    pip install -r requirements.txt
 
 Siempre es posible instalar cada librería por separado.
 
